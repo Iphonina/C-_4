@@ -7,12 +7,10 @@ Console.Write("Введите число: ");
 int X = Convert.ToInt32(Console.ReadLine());
 
 int Sum = 0;
-int count = 0;
-while (count <= X)
+while (X >= 0)
 {
     Sum = Sum + X%10;
     X/= 10;
-    count++;
 }
 
 Console.WriteLine($"Сумма цифр в данном числе равна {Sum}");
